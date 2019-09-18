@@ -37,3 +37,12 @@ Now, running the "Freeze_Connectors.js" script, the current set of relationships
 #### Remove_Unfrozen_Connectors.js
 
 This is a Javascript file that should be added to EA Project Browser Group script. It hides all of the connectors that have not been "Frozen".
+
+So, let's say that after we've frozen the above diagram's links, other relationships are added to the first diagram:
+
+![Diagram showing a class diagram including another link](README_files/added_another_relationship.png)
+
+Now, this other relationship infects the other diagram:
+
+![Diagram infected by the additional relationship](README_files/infected_diagram.png)
+
