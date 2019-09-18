@@ -5,9 +5,9 @@ This consists of:
 
 ## Removing Annoying Connector scripts
 
-So you want to model a set of scenarios using EA with connectors or links between different elements (e.g. Dependency, Trace etc). Then you want to model another scenario using the same elements and..... Oh no, EA keeps on adding the relationships across all of these diagrams and now I have a real maintenance headache trying to keep all of the diagrams clean. 
+So you want to model a set of scenarios using EA with connectors or links between different elements (e.g. Dependency, Trace etc). Then you want to model another scenario using the same elements and..... Oh no, EA keeps on adding the relationships across all of these diagrams and now I have a real maintenance headache trying to keep all of the diagrams clean. This scripts may help: 
 
-### The problem explained
+### The scripts explained
 
 Let's say that you want to add a diagram with some relationships between classes:
 
@@ -17,11 +17,11 @@ And now you want to add another diagram displaying the same classes again, Now E
 
 ![Diagram showing unwanted relationships](README_files/the_problem_2.png)
 
-Now, you might desire this behaviour and you might not... I find that this the behaviour is ok until you are modelling different scenarios where you want to highlight different relationships between the same elements on different diagrams.
+Now, you might desire this behaviour and you might not... I find that this behaviour is ok until you are modelling different scenarios where you want to highlight different relationships between the same elements on different diagrams.
 
 #### Remove_All_Connectors.js
 
-This is a Javascript file that should be added to EA Project Browser Group script. It removes all connectors on a diagram as if the user had clicked on each connector and selected "Hide Connector". The connector still remains in the model but is no longer visible on the diagram on which this script was run. Here is the result of running it on the above diagram.
+This is a Javascript file that should be added to EA Project Browser Group script. It removes all connectors on a diagram as if the user had clicked on each connector in turn and selected "Hide Connector". The connector still remains in the model but is no longer visible on the diagram on which this script was run. Here is the result of running it on the above diagram.
 
 ![Diagram showing classes with no relationships](README_files/no_relationships.png)
 
@@ -42,10 +42,12 @@ So, let's say that after we've frozen the above diagram's links, other relations
 
 ![Diagram showing a class diagram including another link](README_files/added_another_relationship.png)
 
-Now, this other relationship infects the other diagram:
+Now, this new relationship on the first diagram infects the other diagram:
 
 ![Diagram infected by the additional relationship](README_files/infected_diagram.png)
 
-Fear Not! - Because you have frozen the state of the diagram previously, you can run "Remove_Unfrozen_Connectors.js" and the diagram will return to the state you desired:
+Fear Not! - Since you have frozen the state of the diagram previously, you can run "Remove_Unfrozen_Connectors.js" and the diagram will return to the state you desired:
 
 ![Diagram showing a class diagram with another relationship](README_files/added_relationship.png)
+
+If you need some help understanding how to install the above scripts, take a look here: https://sparxsystems.com/enterprise_architect_user_guide/14.0/automation/automation_interface.html
