@@ -46,3 +46,6 @@ Now, this other relationship infects the other diagram:
 
 ![Diagram infected by the additional relationship](README_files/infected_diagram.png)
 
+Fear Not! - Because you have frozen the state of the diagram previously, you can run "Remove_Unfrozen_Connectors.js" and the diagram will return to the state you desired:
+
+![Diagram showing a class diagram with another relationship](README_files/added_relationship.png)
