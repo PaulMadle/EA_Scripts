@@ -5,7 +5,7 @@ This consists of:
 
 ## Removing Annoying Connector scripts
 
-So you want to model a set of scenarios using EA with connectors or links between different elements (e.g. Dependency, Trace etc). Then you want to model another scenario using the same elements and..... Oh no, EA keeps on adding the relationships across all of these diagrams and now I have a real maintenance headache trying to keep all of the diagrams clean. This scripts may help: 
+So you want to model a set of scenarios using EA with connectors or links between different elements (e.g. Dependency, Trace etc). Then you want to model another scenario using the same elements and..... Oh no, EA keeps on adding the relationships across all of these diagrams and now I have a real maintenance headache trying to keep all of the diagrams clean. These scripts may help: 
 
 ### The scripts explained
 
