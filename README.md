@@ -1,3 +1,6 @@
+#NOTE:
+As of version 15.1 of Enterprise Architect, SPARX have created a better feature that can "Freeze Visible Relationships at a Point in Time", please see https://sparxsystems.com/products/ea/15.1/index.html
+
 # Enterprise Architect Scripts
 A collection of scripts that we have found helpful when using enterprise architect.
 
